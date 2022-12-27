@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <!-- here we are learning about html forms and how that works -->
+    <form action="mailto:kumaradityamain@gmail.com" method="post" enctype="text/plain"> 
+        <!-- action means what should happen after clicking submit button like navigate to a page or maybe go to a mail client-->
+        <!-- enctype or encoding type is set to plain text that helps to only take plain text inputs without any symbols -->
+        <label>Your Name: <input type="text"></label><br>
+        <label for="submit">Submit Button:</label>
+        <input type="submit" id="submit"><br>
+        <label for="color">Choose the color of your liking:</label>
+        <input type="color" name="" id="color"><br>
+        <label for="check">Check if you like to hear from us:</label>
+        <input type="checkbox" name="" id="check"><br>
+        <label for="pass">Enter your password:</label>
+        <input type="password" name="" id="pass"> <!-- for masked inputs -->
+        <!-- <input type="date">
+        <input type="range" name="" id="">
+        <input type="file" name="" id="">
+        <input type="radio" name="" id=""> -->
+        <label for="textarea">Enter Detail</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10">Enter Your Details</textarea> 
+        <!-- the size of text area is adjustable but the default area is provided inside our element as row and cols -->
+
+        <!-- using name attribute helps us to classify the input data we recieve after we submit the form and it will specify which data belongs to which input field -->
+
+        <!-- in html form we need to specify labels for all the elements which we can do in 2 ways :
+        one is to put the element inside the label tag
+        other is to use the for attribute of the label tag to refer to the class of the element  -->
+        <!-- note that you still have to align and place the label in correct place and bunching a all the labels in one place won't work -->
+    </form>
+</body>
+</html>
